@@ -5,10 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>webComponents</title>
-  <script src="./index.js"></script>
 </head>
 <body>
-  <div>外层</div>
+  <div id="title">外层</div>
+  <custom-div name="div" type="comments"></custom-div>
+
+  <template id="custom-tem">
+    <style>
+      div{
+        color: red;
+      }
+    </style>
+
+    <div>
+      shadow 内层div
+    </div>
+  </template>
   
+  <script src="./index.js"></script>
 </body>
+
 </html>
