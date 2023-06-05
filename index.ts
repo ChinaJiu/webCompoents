@@ -4,7 +4,7 @@ window.onload = () => {
       super()
       const shadow = this.attachShadow({mode: "open"});
       const tem = document.getElementById('custom-tem') as HTMLTemplateElement;
-      
+
       shadow.appendChild(tem.content);
       console.log(this.getAttr("name"));
       console.log(this.getAttr("type"));
@@ -34,8 +34,6 @@ window.onload = () => {
     attributeChangedCallback() {
       console.log('Custom square element attributes changed.');
     }
-    
-
   }
   window.customElements.define('custom-div', CustomDiv);
 }
